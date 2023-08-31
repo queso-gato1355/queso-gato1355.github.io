@@ -1,0 +1,26 @@
+name: quesogato
+title: Catfliex | Coding blog
+description: This blog is for tracking all my activities and my memoeries.
+tags:
+  - ordinary
+  - code
+  - poems
+  - jokes
+  - talks
+show_hero: true
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+  - title: Feed
+    url: /feed.xml
+email: solar767@unist.ac.kr
+# See: https://disqus.com/
+disqus_username: solar767@unist.ac.kr
+# Contact Form Setting
+# See: https://formspree.io/
+formspree_form_id: solar767@unist.ac.kr
+paginate: 12
