@@ -1,14 +1,13 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: quesogato
+title: Catfliex | Coding blog
+description: This blog is for tracking all my activities and my memoeries.
 tags:
-  - blog
-  - template
-  - jekyll
-  - theme
-  - netlify
+  - ordinary
+  - code
+  - poems
+  - jokes
+  - talks
 show_hero: true
 menu:
   - title: Home
@@ -19,17 +18,17 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: solar767@unist.ac.kr
 # See: https://disqus.com/
-disqus_username: disqus_username
+disqus_username: solar767@unist.ac.kr
 # Contact Form Setting
 # See: https://formspree.io/
-formspree_form_id: formspree_form_id
-
+formspree_form_id: solar767@unist.ac.kr
+paginate: 12
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
+github_username: queso-gato1355
 facebook_username: facebook_username
 twitter_username: twitter_username
 instagram_username: instagram_username
