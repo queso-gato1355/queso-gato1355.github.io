@@ -73,28 +73,16 @@ author:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://queso-gato1355.github.io/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/queso-gato1355"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/queso-gato1355"
 
 defaults:
   # _posts
@@ -140,5 +128,10 @@ comments:
 
 lunr:
   search_within_pages: true
+
+analytics:
+  provider: "google-gtag"
+  google-gtag:
+    tracking_id: "G-VQM7H6CBBV"
 
 # For metadata, setting Twitter Open Graph tags
