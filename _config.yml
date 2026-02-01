@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+title: Jung Youngchan
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 twitter_username: username
 github_username: username
-minimal_mistakes_skin: default
+minimal_mistakes_skin: contrast
 search: true
 
 # Build settings
@@ -31,10 +31,15 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul
+breadcrumb: true
+google-site-verification: "Kpo4IpXyJnNhq2b1kooJ_OhZqRzGqobt0_Z51vTxjfE"
 
 include:
   - _pages
+
+enable_copy_code_button: true
+repository: queso-gato1355/queso-gato1355.github.io
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -58,9 +63,10 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name      : "Jung Youngchan"
+  avatar    : "/assets/images/bio-photo.jpg"
+  bio       : "My awesome biography constrained to a sentence or two goes here."
+  location  : "Seoul, South Korea"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -93,19 +99,21 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      layout            : single
+      author_profile    : true
+      read_time         : true
+      comments          : true
+      share             : true
+      related           : true
+      show_date         : true
+      date_format       : "%Y/%m/%d %H:%M"
   # _pages
   - scope:
-      path: "_pages"
-      type: pages
+      path              : "_pages"
+      type              : pages
     values:
-      layout: single
-      author_profile: true
+      layout            : single
+      author_profile    : true
 
 category_archive:
   type: liquid
@@ -113,3 +121,21 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+atom_feed:
+  hide: true
+
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id             : "R_kgDOQ8Ponw"
+    category_name       : "Announcements"
+    category_id         : "DIC_kwDOQ8Pon84C1J1z"
+    discussion_term     : "url"
+    reactions_enabled   : "1"
+    theme               : "preferred_color_scheme"
+
+lunr:
+  search_within_pages: true
+
+# For metadata, setting Twitter Open Graph tags
