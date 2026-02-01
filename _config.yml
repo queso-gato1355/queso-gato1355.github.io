@@ -33,7 +33,10 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Seoul
 breadcrumb: true
+
+# Site verification
 google-site-verification: "Kpo4IpXyJnNhq2b1kooJ_OhZqRzGqobt0_Z51vTxjfE"
+naver-site-verification: "1eac99b912062c3e4fe20bfbab62cd40a48d7b07"
 
 include:
   - _pages
