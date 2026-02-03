@@ -1,0 +1,33 @@
+{%- assign current_lang = site.active_lang | default: "en" -%}
+{%- assign current_path = page.url -%}
+{%- assign supported_languages = site.languages -%}
+
+{%- comment -%} 1. Base URL 추출 {%- endcomment -%}
+{%- for lang in supported_languages -%}
+  {%- assign prefix = "/" | append: lang | append: "/" -%}
+  {%- if current_path contains prefix -%}
+    {%- assign current_path = current_path | replace_first: prefix, "/" -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if current_path == "" %}{% assign current_path = "/" %}{% endif -%}
+
+<div class="notice--info language-callout" style="margin-top: 1em; font-size: 0.9em; display: flex; flex-wrap: wrap; align-items: center; gap: 10px;">
+  <i class="fas fa-language fa-lg"></i>
+  <span style="margin: 5px;">Read in other languages:</span>
+
+  {%- for language in supported_languages -%}
+    {%- if language != current_lang -%}
+      {%- comment -%} URL 생성 {%- endcomment -%}
+      {%- if language == site.default_lang -%}
+        {%- assign target_url = current_path -%}
+      {%- else -%}
+        {%- assign target_url = "/" | append: language | append: current_path | replace: '//', '/' -%}
+      {%- endif -%}
+
+      <a href="{{ target_url | relative_url }}" class="btn" style="padding: 2px 6px; margin: 2px; background-color: #f5f5f5; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333; font-size: 0.75em; transition: all 0.2s ease; white-space: nowrap;">
+        {{ site.data.i18n[language].label }}
+      </a>
+    {%- endif -%}
+  {%- endfor -%}
+</div>

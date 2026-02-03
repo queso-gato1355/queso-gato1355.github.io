@@ -1,0 +1,68 @@
+{%- assign rendered_lang = site.active_lang | default: "en" -%}
+
+{% capture logo_path %}{{ site.logo }}{% endcapture %}
+
+<div class="masthead">
+  <!-- DEBUG -->
+  <!-- 
+  [Page Debug Info]
+  url: {{ page.url }}
+  title: {{ page.title }}
+  lang: {{ page.lang }}
+  lang-ref: {{ page.lang-ref }}
+  layout: {{ page.layout }}
+  path: {{ page.path }}
+  date: {{ page.date }}
+  categories: {{ page.categories | inspect }}
+  tags: {{ page.tags | inspect }}
+  rendered_lang variable: {{ rendered_lang }}
+  active_lang: {{ site.active_lang }}
+  
+  Full Page Object (Inspect): 
+  {{ page | inspect }}
+  -->
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        {%- comment -%} 로고 및 타이틀 링크도 언어별로 분기 {%- endcomment -%}
+        {%- if rendered_lang == site.default_lang -%}
+          {%- assign home_url = '/' -%}
+        {%- else -%}
+          {%- assign home_url = '/' | append: rendered_lang | append: '/' -%}
+        {%- endif -%}
+        
+        {% unless logo_path == empty %}
+          <a class="site-logo" href="{{ home_url | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+        {% endunless %}
+        <a class="site-title" href="{{ home_url | relative_url }}">
+          {{ site.masthead_title | default: site.title | escape_once | strip }}
+          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle | escape_once | strip }}</span>{% endif %}
+        </a>
+        <ul class="visible-links">
+          {%- comment -%} 선택된 언어의 메뉴만 렌더링 {%- endcomment -%}
+          {%- for link in site.data.navigation[rendered_lang].main -%}
+            <li class="masthead__menu-item">
+              <a
+                href="{{ link.url | relative_url }}"
+                {% if link.description %} title="{{ link.description }}"{% endif %}
+                {% if link.target %} target="{{ link.target }}"{% endif %}
+              >{{ link.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+        {% if site.search == true %}
+
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">{{ site.data.ui-text[site.active_lang].search_label | default: "Toggle search" }}</span>
+          <i class="fas fa-search"></i>
+        </button>
+        {% endif %}
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">{{ site.data.ui-text[site.active_lang].menu_label | default: "Toggle menu" }}</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>

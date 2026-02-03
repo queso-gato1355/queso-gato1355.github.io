@@ -1,0 +1,48 @@
+{% if page.layout == "single" or page.layout == "post" %}
+  {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: "lang" %}
+  {% if posts.size > 1 %}
+    <div class="language-links">
+      <div class="language-links__header">
+        <i class="fas fa-language" aria-hidden="true"></i>
+        <strong>Available in:</strong>
+      </div>
+      <ul class="language-list">
+        {% for post in posts limit:2 %}
+          <li class="language-item {{ post.lang }}{% if post.lang == page.lang %} active{% endif %}">
+            <a href="{{ post.url | relative_url }}" 
+               class="language-link" 
+               title="View in {{ site.data.i18n[post.lang].label }}"
+               {% if post.lang == page.lang %}aria-current="page"{% endif %}>
+              <span class="language-icon">{{ site.data.i18n[post.lang].icon }}</span>
+              <span class="language-label">{{ site.data.i18n[post.lang].label }}</span>
+              {% if post.lang == page.lang %}
+                <span class="language-current">(Current)</span>
+              {% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      {% if posts.size > 2 %}
+        <button class="language-more-toggle" type="button" aria-expanded="false">
+          <i class="fas fa-ellipsis-h"></i> Show {{ posts.size | minus: 2 }} more language{{ posts.size | minus: 2 | pluralize }}
+        </button>
+        <ul class="language-list language-list--hidden">
+          {% for post in posts offset:2 %}
+            <li class="language-item {{ post.lang }}{% if post.lang == page.lang %} active{% endif %}">
+              <a href="{{ post.url | relative_url }}" 
+                 class="language-link" 
+                 title="View in {{ site.data.i18n[post.lang].label }}"
+                 {% if post.lang == page.lang %}aria-current="page"{% endif %}>
+                <span class="language-icon">{{ site.data.i18n[post.lang].icon }}</span>
+                <span class="language-label">{{ site.data.i18n[post.lang].label }}</span>
+                {% if post.lang == page.lang %}
+                  <span class="language-current">(Current)</span>
+                {% endif %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endif %}
