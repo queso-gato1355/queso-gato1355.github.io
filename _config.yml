@@ -14,15 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Jung Youngchan
-email:
+email: piggy77567@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My programming journey and other random thoughts.
 twitter_username: username
-github_username: username
-minimal_mistakes_skin: contrast
+github_username: queso-gato1355
+minimal_mistakes_skin: dark
 search: true
+url: "https://queso-gato1355.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -32,6 +31,7 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Seoul
+# date_format: "%Y/%m/%d %H:%M"
 breadcrumb: true
 
 # Site verification
@@ -64,11 +64,17 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-polyglot
+
+languages: ["en", "ko"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "assets"]
+parallel_localization: false
 
 author:
   name      : "Jung Youngchan"
   avatar    : "/assets/images/bio-photo.jpg"
-  bio       : "My awesome biography constrained to a sentence or two goes here."
+  bio       : "UNIST Undergraduate Student, KATUSA Rotational Unit Supply Specialist"
   location  : "Seoul, South Korea"
   links:
     - label: "Website"
@@ -77,15 +83,21 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/queso-gato1355"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/%EC%98%81%EC%B0%AC-%EC%A0%95-3927923a6/"
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/queso-gato1355"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/%EC%98%81%EC%B0%AC-%EC%A0%95-3927923a6/"
 
 defaults:
-  # _posts
+  # _posts (Default English)
   - scope:
       path: ""
       type: posts
@@ -97,14 +109,40 @@ defaults:
       share             : true
       related           : true
       show_date         : true
-      date_format       : "%Y/%m/%d %H:%M"
-  # _pages
+      lang              : "en"
+      date_format       : "%B %-d, %Y, %l:%M %p"
+      
+  # _posts (Korean)
   - scope:
-      path              : "_pages"
+      path              : "_posts/ko"
+      type              : posts
+    values:
+      layout            : single
+      author_profile    : true
+      read_time         : true
+      comments          : true
+      share             : true
+      related           : true
+      show_date         : true
+      lang              : "ko"
+      # permalink         : "/ko/:categories/:title/"
+      date_format       : "%Y년 %m월 %d일 %H:%M"
+  # _pages (English)
+  - scope:
+      path              : "_pages/en"
       type              : pages
     values:
       layout            : single
       author_profile    : true
+      lang              : "en"
+  # _pages (Korean)
+  - scope:
+      path              : "_pages/ko"
+      type              : pages
+    values:
+      layout            : single
+      author_profile    : true
+      lang              : "ko"
 
 category_archive:
   type: liquid
@@ -117,14 +155,9 @@ atom_feed:
   hide: true
 
 comments:
-  provider: "giscus"
-  giscus:
-    repo_id             : "R_kgDOQ8Ponw"
-    category_name       : "Announcements"
-    category_id         : "DIC_kwDOQ8Pon84C1J1z"
-    discussion_term     : "url"
-    reactions_enabled   : "1"
-    theme               : "preferred_color_scheme"
+  provider: "disqus"
+  disqus:
+    shortname: "queso-gato1355-github-io"
 
 lunr:
   search_within_pages: true
