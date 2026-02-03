@@ -5,6 +5,9 @@ categories:
 tags:
   - Post Formats
   - notice
+lang: en
+permalink: /:title/
+lang-ref: post-notice
 ---
 
 A notice displays information that explains nearby content. Often used to call attention to a particular detail.

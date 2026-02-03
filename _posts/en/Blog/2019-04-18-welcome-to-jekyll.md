@@ -2,10 +2,15 @@
 title: "Welcome to Jekyll!"
 date: 2019-04-18T15:34:30-04:00
 categories:
-  - blog
+  - Blog
 tags:
   - Jekyll
   - update
+lang: en
+lang-ref: welcome-to-jekyll
+permalink: /:title/
+header:
+  overlay_image: /assets/images/posts/2019-04-18-welcome-to-jekyll/header.jpg
 ---
 
 You'll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

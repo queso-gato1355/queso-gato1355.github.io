@@ -7,6 +7,9 @@ tags:
   - Post Formats
   - readability
   - standard
+lang: en
+permalink: /:title/
+lang-ref: post-modified-date
 ---
 
 This post has been updated and should show a modified date if used in a layout.

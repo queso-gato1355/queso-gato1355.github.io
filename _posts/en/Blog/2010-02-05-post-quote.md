@@ -5,6 +5,9 @@ categories:
 tags:
   - Post Formats
   - quote
+lang: en
+permalink: /:title/
+lang-ref: post-quote
 ---
 
 > Only one thing is impossible for God: To find any sense in any copyright law on the planet.
