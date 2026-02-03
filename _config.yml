@@ -35,7 +35,9 @@ timezone: Asia/Seoul
 breadcrumb: true
 
 # Site verification
+## google-site-verification=Kpo4IpXyJnNhq2b1kooJ_OhZqRzGqobt0_Z51vTxjfE
 google-site-verification: "Kpo4IpXyJnNhq2b1kooJ_OhZqRzGqobt0_Z51vTxjfE"
+## <meta name="naver-site-verification" content="1eac99b912062c3e4fe20bfbab62cd40a48d7b07" />
 naver-site-verification: "1eac99b912062c3e4fe20bfbab62cd40a48d7b07"
 
 include:
