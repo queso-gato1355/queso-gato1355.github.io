@@ -7,6 +7,7 @@
 - **Jekyll 기반**: 정적 사이트 생성기인 Jekyll을 사용합니다.
 - **Minimal Mistakes 테마**: mmistakes/minimal-mistakes 원격 테마를 사용합니다.
 - **다국어 지원**: `jekyll-polyglot` 플러그인을 사용하여 영어(기본)와 한국어를 지원합니다.
+- **스마트 언어 링크**: 커스텀 플러그인(`_plugins/polyglot_availability_map.rb`)을 통해 실제 번역된 포스트가 존재할 때만 언어 전환 버튼을 표시합니다.
 - **포트폴리오 섹션**: 별도의 포트폴리오 컬렉션을 관리합니다.
 - **자동화된 배포**: `deploy.sh` 스크립트를 통해 빌드 및 배포 과정을 자동화했습니다.
 
@@ -19,6 +20,7 @@
 - `_pages/`: 정적 페이지 파일 (소개, 아카이브 등).
 - `_portfolio/`: 포트폴리오 항목 관리.
 - `_layouts/`, `_includes/`: 커스텀 레이아웃 및 HTML 조각.
+- `_plugins/`: Jekyll 빌드 시 실행되는 커스텀 플러그인 (다국어 가용성 확인 등).
 - `deploy.sh`: 사이트 빌드 및 GitHub Pages 배포를 위한 쉘 스크립트.
 - `.env`: (사용자 생성 필요) 배포 환경 변수 설정 파일.
 
