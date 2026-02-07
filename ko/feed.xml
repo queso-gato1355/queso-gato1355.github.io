@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://queso-gato1355.github.io/ko/feed.xml" rel="self" type="application/atom+xml" /><link href="https://queso-gato1355.github.io/ko/" rel="alternate" type="text/html" /><updated>2026-02-07T21:33:31+09:00</updated><id>https://queso-gato1355.github.io/feed.xml</id><title type="html">Jung Youngchan</title><subtitle>My programming journey and other random thoughts.</subtitle><author><name>Jung Youngchan</name></author><entry xml:lang="ko"><title type="html">Jekyll에 온 것을 환영합니다!</title><link href="https://queso-gato1355.github.io/ko/welcome-to-jekyll/" rel="alternate" type="text/html" title="Jekyll에 온 것을 환영합니다!" /><published>2019-04-19T04:34:30+09:00</published><updated>2019-04-19T04:34:30+09:00</updated><id>https://queso-gato1355.github.io/welcome-to-jekyll</id><content type="html" xml:base="https://queso-gato1355.github.io/welcome-to-jekyll/"><![CDATA[<p>이 게시물은 <code class="language-plaintext highlighter-rouge">_posts</code> 디렉토리에서 찾을 수 있습니다. 편집하고 사이트를 다시 빌드하여 변경 사항을 확인하세요. 사이트를 다시 빌드하는 방법은 여러 가지가 있지만, 가장 일반적인 방법은 <code class="language-plaintext highlighter-rouge">jekyll serve</code>를 실행하는 것입니다. 이는 웹 서버를 시작하고 파일이 업데이트될 때 사이트를 자동으로 다시 생성합니다.</p>
+
+<p>새 게시물을 추가하려면 <code class="language-plaintext highlighter-rouge">_posts</code> 디렉토리에 <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> 규칙을 따르는 파일을 추가하고 필요한 front matter를 포함하세요. 이 게시물의 소스를 살펴보면 어떻게 작동하는지 알 수 있습니다.</p>
+
+<p>Jekyll은 코드 스니펫에 대한 강력한 지원도 제공합니다:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span>
+</code></pre></div></div>
+
+<p>Jekyll을 최대한 활용하는 방법에 대한 자세한 내용은 <a href="https://jekyllrb.com/docs/home">Jekyll 문서</a>를 확인하세요. 모든 버그/기능 요청은 <a href="https://github.com/jekyll/jekyll">Jekyll의 GitHub 저장소</a>에 제출하세요. 질문이 있으시면 <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>에서 물어볼 수 있습니다.</p>]]></content><author><name>Jung Youngchan</name></author><category term="Blog" /><category term="Jekyll" /><category term="update" /><summary type="html"><![CDATA[테스트 문장]]></summary></entry><entry xml:lang="ko"><title type="html">포스트: 링크</title><link href="https://queso-gato1355.github.io/ko/post-link/" rel="alternate" type="text/html" title="포스트: 링크" /><published>2010-03-07T00:00:00+09:00</published><updated>2010-03-07T00:00:00+09:00</updated><id>https://queso-gato1355.github.io/post-link</id><content type="html" xml:base="https://queso-gato1355.github.io/post-link/"><![CDATA[<p>이 테마는 John Gruber가 유명하게 만든 <strong>링크 포스트</strong>를 지원합니다. 사용하려면 포스트의 YAML 앞부분에 <code class="language-plaintext highlighter-rouge">link: http://연결하려는-url</code>을 추가하면 됩니다.</p>
+
+<blockquote>
+  <p>이렇게 인용문이 표시됩니다.</p>
+</blockquote>
+
+<p>일부 <a href="#">링크</a>도 표시될 수 있습니다.</p>]]></content><author><name>Jung Youngchan</name></author><category term="Blog" /><category term="link" /><category term="Post Formats" /><summary type="html"><![CDATA[이 테마는 John Gruber가 유명하게 만든 링크 포스트를 지원합니다. 사용하려면 포스트의 YAML 앞부분에 link: http://연결하려는-url을 추가하면 됩니다.]]></summary></entry><entry xml:lang="ko"><title type="html">게시물: 인용</title><link href="https://queso-gato1355.github.io/ko/post-quote/" rel="alternate" type="text/html" title="게시물: 인용" /><published>2010-02-05T00:00:00+09:00</published><updated>2010-02-05T00:00:00+09:00</updated><id>https://queso-gato1355.github.io/post-quote</id><content type="html" xml:base="https://queso-gato1355.github.io/post-quote/"><![CDATA[<blockquote>
+  <p>신은 한 가지만 할 수 없습니다: 지구상의 어떤 저작권법에서든 의미를 찾는 것입니다.</p>
+</blockquote>
+
+<blockquote>
+  <p><cite><a href="http://www.brainyquote.com/quotes/quotes/m/marktwain163473.html">Mark Twain</a></cite></p>
+</blockquote>]]></content><author><name>Jung Youngchan</name></author><category term="Blog" /><category term="Post Formats" /><category term="quote" /><summary type="html"><![CDATA[신은 한 가지만 할 수 없습니다: 지구상의 어떤 저작권법에서든 의미를 찾는 것입니다. Mark Twain]]></summary></entry><entry xml:lang="ko"><title type="html">포스트: 공지</title><link href="https://queso-gato1355.github.io/ko/post-notice/" rel="alternate" type="text/html" title="포스트: 공지" /><published>2010-02-05T00:00:00+09:00</published><updated>2010-02-05T00:00:00+09:00</updated><id>https://queso-gato1355.github.io/post-notice</id><content type="html" xml:base="https://queso-gato1355.github.io/post-notice/"><![CDATA[<p>공지는 인접한 콘텐츠를 설명하는 정보를 표시합니다. 특정 세부 사항에 주의를 끌기 위해 자주 사용됩니다.</p>
+
+<p>Kramdown을 사용할 때 문장 뒤에 <code class="language-plaintext highlighter-rouge">{: .notice}</code>를 추가하여 <code class="language-plaintext highlighter-rouge">.notice</code>를 <code class="language-plaintext highlighter-rouge">&lt;p&gt;&lt;/p&gt;</code> 요소에 할당할 수 있습니다.</p>
+
+<p class="notice"><strong>서비스 변경:</strong> 고객에게 더 나은 서비스를 제공하기 위해 <a href="#">개인정보 보호정책</a>을 업데이트했습니다. 변경 사항을 검토하시기 바랍니다.</p>
+
+<p class="notice--primary"><strong>주요 공지:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. <a href="#">Praesent libero</a>. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+
+<p class="notice--info"><strong>정보 공지:</strong> Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+
+<p class="notice--warning"><strong>경고 공지:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Integer nec odio</a>. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+
+<p class="notice--danger"><strong>위험 공지:</strong> Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing</a> elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+
+<p class="notice--success"><strong>성공 공지:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at <a href="#">nibh elementum</a> imperdiet.</p>
+
+<p>여러 단락이나 다른 요소를 공지로 감싸고 싶으신가요? Liquid를 사용하여 콘텐츠를 캡처한 다음 <code class="language-plaintext highlighter-rouge">markdownify</code>로 필터링하는 것이 좋은 방법입니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% capture notice-2 %}
+#### 새로운 사이트 기능
+
+* 이제 블로그 페이지에 커버 이미지를 추가할 수 있습니다
+* 작성 중 초안이 자동 저장됩니다
+{% endcapture %}
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notice"</span><span class="nt">&gt;</span>{{ notice-2 | markdownify }}<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="notice">
+  
+<h4 id="새로운-사이트-기능">새로운 사이트 기능</h4>
+
+<ul>
+  <li>이제 블로그 페이지에 커버 이미지를 추가할 수 있습니다</li>
+  <li>작성 중 초안이 자동 저장됩니다</li>
+</ul>
+
+</div>
+
+<p>또는 캡처를 건너뛰고 순수 HTML을 사용할 수 있습니다.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notice"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;</span>메시지<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;p&gt;</span>기본 메시지입니다.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="notice">
+  <h4>메시지</h4>
+  <p>기본 메시지입니다.</p>
+</div>]]></content><author><name>Jung Youngchan</name></author><category term="Blog" /><category term="Post Formats" /><category term="notice" /><summary type="html"><![CDATA[공지는 인접한 콘텐츠를 설명하는 정보를 표시합니다. 특정 세부 사항에 주의를 끌기 위해 자주 사용됩니다.]]></summary></entry><entry xml:lang="ko"><title type="html">포스트: 채팅</title><link href="https://queso-gato1355.github.io/ko/post-chat/" rel="alternate" type="text/html" title="포스트: 채팅" /><published>2010-01-08T00:00:00+09:00</published><updated>2010-01-08T00:00:00+09:00</updated><id>https://queso-gato1355.github.io/post-chat</id><content type="html" xml:base="https://queso-gato1355.github.io/post-chat/"><![CDATA[<p>Abbott: 이상하게 들릴지 모르지만, 요즘 야구 선수들은 정말 특이한 이름을 갖고 있어.</p>
+
+<p>Costello: 웃긴 이름들?</p>
+
+<p>Abbott: 별명, 별명이야. 자, 세인트루이스 팀에는 Who가 1루에 있고, What이 2루에 있고, I Don’t Know가 3루에 있어–</p>
+
+<p>Costello: 그게 내가 알고 싶은 거야. 세인트루이스 팀 선수들의 이름을 말해줘.</p>
+
+<p>Abbott: 말하고 있잖아. Who가 1루에 있고, What이 2루에 있고, I Don’t Know가 3루에 있어–</p>
+
+<p>Costello: 너 그 선수들의 이름 알아?</p>
+
+<p>Abbott: 응.</p>
+
+<p>Costello: 그럼 누가 1루를 맡고 있어?</p>
+
+<p>Abbott: 응.</p>
+
+<p>Costello: 내 말은 1루에 있는 그 선수의 이름.</p>
+
+<p>Abbott: Who.</p>
+
+<p>Costello: 1루를 하는 선수 말이야.</p>
+
+<p>Abbott: Who.</p>
+
+<p>Costello: 1루에 있는 그 녀석.</p>
+
+<p>Abbott: Who가 1루에 있어.</p>
+
+<p>Costello: 그럼 왜 나한테 묻는 거야?</p>
+
+<p>Abbott: 난 묻는 게 아니라 말하는 거야. Who가 1루에 있어.</p>
+
+<p>Costello: 내가 묻는 거야 – 누가 1루를 맡고 있어?</p>
+
+<p>Abbott: 그게 그 사람의 이름이야.</p>
+
+<p>Costello: 누구의 이름이라고?</p>
+
+<p>Abbott: 응.</p>
+
+<p>Costello: 매달 1루수에게 급여를 줄 때, 누가 돈을 받아?</p>
+
+<p>Abbott: 매달 모든 돈을 받지. 당연하지, 그 사람이 받을 자격이 있으니까.</p>
+
+<p>Costello: 누가?</p>
+
+<p>Abbott: 응.</p>
+
+<p>Costello: 그럼 누가 돈을 받아?</p>
+
+<p>Abbott: 왜 안 받아? 가끔 아내가 내려와서 받아가곤 해.</p>
+
+<p>Costello: 누구의 아내?</p>
+
+<p>Abbott: 응. 결국 그 사람이 번 돈이니까.</p>
+
+<p>Costello: 누가?</p>
+
+<p>Abbott: 그렇지.</p>
+
+<p>Costello: 그래, 내가 알고 싶은 건 1루에 있는 그 녀석의 이름이 뭔지라는 거야.</p>
+
+<p>Abbott: 아, 안 돼, 안 돼. What이 2루에 있어.</p>
+
+<p>Costello: 난 2루에 누가 있는지 묻는 게 아니야.</p>
+
+<p>Abbott: Who가 1루에 있어!</p>
+
+<p>Costello: 세인트루이스가 외야가 괜찮아?</p>
+
+<p>Abbott: 아, 정말로.</p>
+
+<p>Costello: 좌익수의 이름?</p>
+
+<p>Abbott: Why.</p>
+
+<p>Costello: 몰라, 그냥 물어보고 싶었어.</p>
+
+<p>Abbott: 글쎄, 난 그냥 말해주고 싶었어.</p>
+
+<p>Costello: 그럼 누가 좌익을 맡고 있어?</p>
+
+<p>Abbott: Who가 1루를 맡고 있어.</p>
+
+<p>Costello: 내야에서 벗어나! 좌익수의 이름?</p>
+
+<p>Abbott: Why.</p>
+
+<p>Costello: 왜냐고?</p>
+
+<p>Abbott: 아, 그 사람은 중익이야.</p>
+
+<p>Costello: 잠깐만. 이 팀에 투수가 있어?</p>
+
+<p>Abbott: 투수 없이 이런 좋은 팀이 되겠어?</p>
+
+<p>Costello: 투수의 이름을 말해줘.</p>
+
+<p>Abbott: Tomorrow.</p>
+
+<p>Costello: 자, 타자가 번트를 칠 때 – 내가 좋은 포수니까 – 나는 그 녀석을 1루에서 아웃시키기 위해 공을 집어서 누구한테 던져?</p>
+
+<p>Abbott: 지금, 그게 네가 처음으로 맞게 말한 거야.</p>
+
+<p>Costello: 난 내가 뭘 말하는지도 모르겠어!</p>
+
+<p>Abbott: 흥분하지 마. 진정해.</p>
+
+<p>Costello: 나는 공을 1루에 던져, 누구든 그 공을 잡으면, 그 녀석은 2루로 달려가. Who가 공을 집어서 What에게 던져. What은 I Don’t Know에게 던져. I Don’t Know는 Tomorrow에게 다시 던져 – 삼중 아웃.</p>
+
+<p>Abbott: 응, 될 수 있지.</p>
+
+<p>Costello: 또 다른 녀석이 나와서 중간으로 긴 공을 친다.</p>
+
+<p>Abbott: 왜냐하면.</p>
+
+<p>Costello: 왜? 난 몰라. 그리고 관심도 없어.</p>
+
+<p>Abbott: 뭐라고 했어?</p>
+
+<p>Costello: 내가 말한 건, 난 상관없다는 거야!</p>
+
+<p>Abbott: 아, 그게 우리 유격수야!</p>]]></content><author><name>Jung Youngchan</name></author><category term="Blog" /><category term="chat" /><category term="Post Formats" /><summary type="html"><![CDATA[Abbott: 이상하게 들릴지 모르지만, 요즘 야구 선수들은 정말 특이한 이름을 갖고 있어.]]></summary></entry><entry xml:lang="ko"><title type="html">포스트: 수정된 날짜</title><link href="https://queso-gato1355.github.io/ko/post-modified/" rel="alternate" type="text/html" title="포스트: 수정된 날짜" /><published>2010-01-07T00:00:00+09:00</published><updated>2016-03-10T06:20:02+09:00</updated><id>https://queso-gato1355.github.io/post-modified</id><content type="html" xml:base="https://queso-gato1355.github.io/post-modified/"><![CDATA[<p>이 포스트는 업데이트되었으며 레이아웃에서 사용될 경우 수정된 날짜를 표시해야 합니다.</p>
+
+<p>모든 아이들은 하나를 제외하고 자라납니다. 그들은 곧 자라날 것이라는 것을 알게 됩니다. 그리고 웬디가 알게 된 방식은 이러했습니다. 그녀가 두 살이 되던 어느 날, 그녀는 정원에서 놀고 있었고, 꽃 하나를 꺾어서 엄마에게 가지고 갔습니다. 분명 그녀는 매력적으로 보였을 것 같습니다. 왜냐하면 다알링 부인은 가슴에 손을 얹고 “아, 이대로 영원히 남아 있을 수는 없을까!”라고 외쳤기 때문입니다. 이 주제에 대해서는 그게 전부였지만, 그 이후로 웬디는 자라야 한다는 것을 알게 되었습니다. 당신은 두 살이 된 후에는 항상 알게 됩니다. 두 살은 끝의 시작입니다.</p>]]></content><author><name>Jung Youngchan</name></author><category term="Blog" /><category term="Post Formats" /><category term="readability" /><category term="standard" /><summary type="html"><![CDATA[이 포스트는 업데이트되었으며 레이아웃에서 사용될 경우 수정된 날짜를 표시해야 합니다.]]></summary></entry><entry xml:lang="ko"><title type="html">포스트: 표준</title><link href="https://queso-gato1355.github.io/ko/post-standard/" rel="alternate" type="text/html" title="포스트: 표준" /><published>2010-01-07T00:00:00+09:00</published><updated>2010-01-07T00:00:00+09:00</updated><id>https://queso-gato1355.github.io/post-standard</id><content type="html" xml:base="https://queso-gato1355.github.io/post-standard/"><![CDATA[<p>한 아이를 제외한 모든 아이들은 자라난다. 그들은 곧 자라날 것임을 알게 되고, 웬디가 알게 된 방식은 이렇다. 두 살 때 어느 날 그녀가 정원에서 놀고 있었는데 다른 꽃을 따서 엄마에게 달려갔다. 그녀가 꽤 사랑스러워 보였을 것 같으니, 다알링 부인이 가슴에 손을 얹고 외쳤을 것이다. “아, 왜 넌 영원히 이렇게 있을 수 없니!” 이것이 이 주제에 대해 그들 사이에 오간 전부였지만, 그 이후로 웬디는 자라야 한다는 것을 알았다. 두 살이 되면 항상 알게 된다. 두 살은 끝의 시작이다.</p>
+
+<p>다알링 부인이 피터에 대해 처음 들은 것은 자기 아이들의 마음을 정리할 때였다. 좋은 엄마라면 자식들이 잠든 후 밤마다 그들의 마음속을 뒤져서 내일 아침을 위해 정리하는 것이 관례다. 낮 동안 여러 곳으로 흩어진 많은 물건들을 제자리에 다시 정리하곤 한다.</p>
+
+<!--more-->
+
+<p>이 포스트는 두 번째 단락 이후에 수동 발췌 <code class="language-plaintext highlighter-rouge">&lt;!--more--&gt;</code>가 설정되어 있습니다. 다음의 YAML Front Matter도 적용되었습니다:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">excerpt_separator</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&lt;!--more--&gt;"</span>
+</code></pre></div></div>
+
+<p>만약 당신이 깨어 있을 수 있다면 (물론 할 수 없겠지만) 당신의 엄마가 하는 것을 보게 될 것이고, 매우 흥미로울 것입니다. 서랍을 정리하는 것과 꽤 비슷합니다. 아마도 당신은 그녀가 무릎을 꿇고 당신의 소지품 중 일부를 재미있게 오래 보며, 도대체 이것을 어디서 주워왔는지 궁금해하고, 마치 새끼고양이처럼 예쁜 것을 뺨에 대고, 보이지 않게 급히 치워두는 모습을 보게 될 것입니다. 아침에 일어나면, 잠들기 전에 가지고 있던 나쁜 행동과 악한 욕정들은 작게 접혀져 마음의 밑바닥에 놓여 있고, 맨 위에는 아름답게 말려진 예쁜 생각들이 펼쳐져 있어서 당신이 입을 준비가 되어 있을 것입니다.</p>
+
+<p>당신이 사람의 마음의 지도를 본 적이 있는지 모르겠습니다. 의사들은 때때로 당신의 다른 부분들의 지도를 그리고, 자신의 지도가 매우 흥미로워질 수 있지만, 아이의 마음의 지도를 그리려고 하는 의사들을 잡기 위해 필사적입니다. 아이의 마음은 혼란스러울 뿐만 아니라 항상 계속 도는 것입니다. 그 위에는 지그재그 선들이 있는데, 마치 카드 위의 당신의 체온처럼, 이것들은 아마도 섬 위의 길들일 것입니다. 네버랜드는 항상 어느 정도는 섬이며, 여기저기 놀라운 색의 튀김, 산호초, 험상궂은 모습의 배들, 야만인과 외로운 소굴, 대부분 재단사인 요정들, 강이 흐르는 동굴, 여섯 명의 형을 가진 왕자들, 썩어가는 오두막, 그리고 갈고리 코를 가진 아주 작은 할멈 하나가 있습니다. 만약 그것이 전부라면 쉬운 지도일 텐데, 또한 첫 학교 날, 종교, 아버지, 둥근 연못, 바느질, 살인, 교수형, 여격을 취하는 동사, 초콜릿 푸딩 날, 교정기에 들어가기, 구십구를 말하기, 당신의 이를 직접 뽑는 데 3펜스, 그 외 등등이 있으며, 이것들이 섬의 일부인지 아니면 다른 지도가 보여지고 있는지, 그리고 모든 것이 매우 혼란스럽습니다. 특히 아무것도 제자리에 서 있지 않기 때문입니다.</p>
+
+<p>물론 네버랜드는 많이 다양합니다. 예를 들어 존의 네버랜드에는 플라밍고들이 날아다니는 석호가 있었는데 존이 그것들을 쏘고 있었고, 매우 작았던 마이클은 그 위에 석호들이 날아다니는 플라밍고를 가지고 있었습니다. 존은 모래 위에 뒤집어진 보트에 살았고, 마이클은 티피에, 웬디는 정교하게 꿰매진 잎사귀 집에 살았습니다. 존은 친구가 없었고, 마이클은 밤에 친구들을 가지고 있었으며, 웬디는 부모에게 버려진 늑대를 애완동물로 가지고 있었지만, 전반적으로 네버랜드들은 가족 유사성을 가지고 있으며, 만약 그들이 일렬로 서 있다면 그들이 서로의 코를 가지고 있다고 말할 수 있을 것입니다. 이 마법의 해변에서 놀이하는 아이들은 영원히 그들의 작은 배를 해변에 띄워놓고 있습니다. 우리도 거기 있었습니다. 우리는 여전히 파도의 소리를 들을 수 있지만, 더 이상 상륙할 수는 없습니다.</p>
+
+<p>모든 즐거운 섬 중에서 네버랜드는 가장 안락하고 가장 컴팩트한데, 크고 퍼져 있지 않으며, 한 모험에서 다른 모험 사이의 지루한 거리가 없지만, 아주 빈틈없이 채워져 있습니다. 낮에 의자와 식탁보로 그것을 가지고 놀 때는 전혀 두렵지 않지만, 잠들기 전 2분 동안은 매우 현실적이 됩니다. 그래서 야간 조명등이 있는 것입니다.</p>
+
+<p>그녀의 아이들의 마음을 여행하다가 다알링 부인은 이해할 수 없는 것들을 가끔 발견했으며, 이들 중 가장 혼란스러운 것은 피터라는 단어였습니다. 그녀는 피터를 알지 못했지만, 그는 존과 마이클의 마음 여기저기에 있었고, 웬디의 마음은 그것으로 낙서되기 시작했습니다. 그 이름은 다른 어떤 단어보다도 더 굵은 글자로 눈에 띄었고, 다알링 부인이 바라볼 때, 그것이 이상하게 건방진 모습을 가지고 있다고 느꼈습니다.</p>]]></content><author><name>Jung Youngchan</name></author><category term="Blog" /><category term="Post Formats" /><category term="readability" /><category term="standard" /><summary type="html"><![CDATA[한 아이를 제외한 모든 아이들은 자라난다. 그들은 곧 자라날 것임을 알게 되고, 웬디가 알게 된 방식은 이렇다. 두 살 때 어느 날 그녀가 정원에서 놀고 있었는데 다른 꽃을 따서 엄마에게 달려갔다. 그녀가 꽤 사랑스러워 보였을 것 같으니, 다알링 부인이 가슴에 손을 얹고 외쳤을 것이다. “아, 왜 넌 영원히 이렇게 있을 수 없니!” 이것이 이 주제에 대해 그들 사이에 오간 전부였지만, 그 이후로 웬디는 자라야 한다는 것을 알았다. 두 살이 되면 항상 알게 된다. 두 살은 끝의 시작이다. 다알링 부인이 피터에 대해 처음 들은 것은 자기 아이들의 마음을 정리할 때였다. 좋은 엄마라면 자식들이 잠든 후 밤마다 그들의 마음속을 뒤져서 내일 아침을 위해 정리하는 것이 관례다. 낮 동안 여러 곳으로 흩어진 많은 물건들을 제자리에 다시 정리하곤 한다.]]></summary></entry></feed>
