@@ -85,3 +85,67 @@ bundle exec jekyll serve
 5. 설정된 SSH 호스트(`DEPLOY_KEY_NAME`)를 사용하여 원격 저장소의 `deploy` 브랜치에 강제 푸시(`--force`)합니다.
 
 이 방식을 통해 소스 코드(`main` 브랜치)와 빌드 결과물(`deploy` 브랜치)을 분리하여 관리합니다.
+
+## 포스트 작성 가이드
+
+### Front Matter 작성 요령
+
+새로운 포스트를 작성할 때 파일 상단에 YAML Front Matter를 포함해야 합니다.
+
+```yaml
+---
+title: "포스트 제목"
+excerpt: "포스트 요약 (선택사항)"
+excerpt_separator: "<!--more-->"
+date: 2026-02-07 14:30:00 +0900
+categories:
+  - Blog
+tags:
+  - 태그1
+  - 태그2
+lang: ko
+permalink: /:title/
+lang-ref: unique-post-id
+---
+```
+
+#### 필드 설명
+
+| 필드 | 필수 | 설명 |
+|------|------|------|
+| `title` | ✅ | 포스트 제목 |
+| `date` | ⬚ | 게시 날짜 및 시간 (파일명에서도 추출 가능) |
+| `categories` | ⬚ | 카테고리 목록 (예: Blog, Life) |
+| `tags` | ⬚ | 태그 목록 |
+| `lang` | ✅ | 언어 코드 (`en` 또는 `ko`) |
+| `permalink` | ⬚ | URL 패턴 (기본: `/:title/`) |
+| `lang-ref` | ⬚ | 다국어 포스트 연결용 고유 ID (동일한 콘텐츠의 다른 언어 버전과 동일하게 설정) |
+| `excerpt` | ⬚ | 포스트 요약 텍스트 |
+| `excerpt_separator` | ⬚ | 본문에서 요약을 구분하는 마커 (예: `<!--more-->`) |
+
+#### 파일 위치
+
+- 영어 포스트: `_posts/en/카테고리/YYYY-MM-DD-제목.md`
+- 한국어 포스트: `_posts/ko/카테고리/YYYY-MM-DD-제목.md`
+
+### 현재 시간 입력 방법
+
+포스트의 `date` 필드에 현재 시간을 입력할 때 다음 명령어를 활용하세요.
+
+#### PowerShell (Windows)
+
+```powershell
+Get-Date -Format "yyyy-MM-dd HH:mm:ss +0900"
+```
+
+#### Git Bash / Linux / Mac
+
+```bash
+date +"%Y-%m-%d %H:%M:%S %z"
+```
+
+#### VS Code에서 바로 복사하기
+
+터미널에서 위 명령어를 실행하면 `2026-02-07 14:30:00 +0900` 형식의 타임스탬프가 출력됩니다. 이를 복사하여 front matter의 `date` 필드에 붙여넣으세요.
+
+> **팁**: 파일명에 날짜가 포함되어 있으면(`YYYY-MM-DD-제목.md`) Jekyll이 자동으로 날짜를 추출합니다. `date` 필드는 정확한 시간이 필요할 때만 지정하면 됩니다.
