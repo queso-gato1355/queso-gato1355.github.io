@@ -21,7 +21,10 @@ fi
 echo "Starting deployment..."
 
 # 1. 기존 _site 폴더 삭제 (깨끗한 빌드를 위해)
-rm -rf _site
+if [ -d "_site" ]; then
+  echo "Removing existing _site folder..."
+  cmd.exe /c "rmdir /s /q _site" 2>/dev/null || rm -rf _site
+fi
 
 # 2. Jekyll 빌드 실행
 echo "Building Jekyll site..."
